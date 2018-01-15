@@ -1,49 +1,23 @@
+/*Universal Styles*/
+
 html {
   font-size:18px;
   background-color:White;
 }
-@media only screen and (max-width:1024px) {
-  body {font-size: 16px}
-  nav ul {display:none}
-  .mobile-nav container {
-    display:block;
-    text-align: center;
-  }
-  @media only screen and (min-width:1024px) {
-    .menu {
-      display:none}
-    }
-  @media only screen and (max-width:470px) {
-.main-banner{
-  height:15rem}
+body{
+    font-family: "Helvetica", sans-serif;
+  line-height: 1.4em;
 }
-.headline {
-  font-family:Helvetica, sans-serif;
-  font-size:0.77rem;
-  font-weight:bold;
-  width:auto;
-  height:5rem;
-  display:block;
-  padding-left:2rem;
-  padding-top: 1rem;
+h1,
+h4 {
+  font-weight: bold;
 }
-.headline h1{
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight:bold;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
-.product{
-  width:30%;
-}
-.product .glasses, .product .watch {
-  display:none;
-}
-}
-body {
-  font-family: Helvetica, sans-serif;
-  line-height:1.4em;
+/*Company Header*/
 
-}
 .company {
   background-color: black;
   color: White;
@@ -51,16 +25,14 @@ body {
   .company .container {
 display:flex;
 align-items: center;
-padding: 12px 0 12px 0.5rem;
+padding: 0.66rem 0 0.661rem 0.5rem;
   }
-.container {
-  max-width:960px;
-  margin: 0 auto;
-}
 .company img {
   height:1.5rem;
-  padding-right:15px;
+  padding-right:1rem;
 }
+
+/*Main Banner*/
 .main-banner {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
   background-repeat: no-repeat;
@@ -144,4 +116,41 @@ footer {
   color:white;
   padding:5em 0;
   margin-top:4em;
+}
+@media only screen and (max-width:1024px) {
+  body {font-size: 16px}
+  nav ul {display:none}
+  .mobile-nav container {
+    display:block;
+    text-align: center;
+  }
+  @media only screen and (min-width:1024px) {
+    .menu {
+      display:none}
+    }
+  @media only screen and (max-width:470px) {
+.main-banner{
+  height:15rem}
+}
+.headline {
+  font-family:Helvetica, sans-serif;
+  font-size:0.77rem;
+  font-weight:bold;
+  width:auto;
+  height:5rem;
+  display:block;
+  padding-left:2rem;
+  padding-top: 1rem;
+}
+.headline h1{
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight:bold;
+}
+.product{
+  width:30%;
+}
+.product .glasses, .product .watch {
+  display:none;
+}
 }
